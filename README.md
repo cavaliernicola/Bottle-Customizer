@@ -43,7 +43,7 @@ First of all, you need Node.js installed, you can download it [here](https://nod
 1. Build the app: `npm run build`
 
 ## Try It!
-You can try this app [HERE](https://genuine-youtiao-07227e.netlify.app/editor)!
+You can try this app [HERE](https://genuine-youtiao-07227e.netlify.app)!
 
 ![App Preview](src/assets/showcase.png)
 
