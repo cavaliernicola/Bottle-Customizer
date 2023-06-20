@@ -130,6 +130,7 @@ const emit = defineEmits(['change-selection', "restart-action", 'undo-action', '
 
       &:disabled {
         opacity: 0.4;
+        cursor: not-allowed;
       }
 
       &:not(:disabled):active {
