@@ -1,6 +1,6 @@
 <script setup>
 import { computed } from 'vue';
-import EditorItem from "../components/EditorItem.vue";
+import EditorManager from "../components/EditorManager.vue";
 import EditorColorSidebar from '../components/EditorColorSidebar.vue';
 import { isEqual } from "lodash";
 import { useBottleStore } from '../store/bottleStore';
@@ -82,7 +82,7 @@ if (!availablePieces.value.length) {
 
 <template>
   <div class="main-content">
-    <EditorItem @change-selection="manageSelection" @restart-action="resetList" @undo-action="undoAction" @set-random="setRandomColor" />
+    <EditorManager @change-selection="manageSelection" @restart-action="resetList" @undo-action="undoAction" @set-random="setRandomColor" />
     <EditorColorSidebar :random-colors="randomColors" @change-color="setColor"/>
   </div>
 </template>
