@@ -31,11 +31,11 @@ const getSelected = (name) => {
       <div class="bottle-cap" :class="{'selected': getSelected('Cap')}" :style="{'background-image': `linear-gradient(to bottom, #ffffff, #bcbdba 25%, #cecece 25%, #c7cac4 25%, #e8e8e8 20%, ${getColor('Cap') || '#981107'} 20%)`}"></div>
       
       <div class="bottle-body">
-        <div class="bottle-neck-wrapper" :class="{'selected': getSelected('Neck')}">
-          <div class="bottle-neck" :style="{'background-color': getColor('Neck')}"></div>
-          <div class="bottle-neck-middle" :style="{'background-color': getColor('Neck')}"></div>
-          <div class="bottle-neck-bottom" :style="{'background-color': getColor('Neck')}"></div>
-          <div class="bottle-neck-bottom-last" :style="{'background-color': getColor('Neck')}"></div>
+        <div class="bottle-neck-wrapper">
+          <div class="bottle-neck" :style="{'background-color': getColor('Neck')}" :class="{'selected': getSelected('Neck')}"></div>
+          <div class="bottle-neck-middle" :style="{'background-color': getColor('Neck')}" :class="{'selected': getSelected('Neck')}"></div>
+          <div class="bottle-neck-bottom" :style="{'background-color': getColor('Neck')}" :class="{'selected': getSelected('Neck')}"></div>
+          <div class="bottle-neck-bottom-last" :style="{'background-color': getColor('Neck')}" :class="{'selected': getSelected('Neck')}"></div>
         </div>
         <div class="bottle-main-body" :class="{'selected': getSelected('Body')}" :style="{'background-color': getColor('Body')}"></div>
         <div class="bottle-bottom" :class="{'selected': getSelected('Bottom')}" :style="{'background-image': `linear-gradient(to top, #bcbdba 17%, ${getColor('Bottom') || '#fee0de' } 20%)`}"></div>
@@ -193,7 +193,6 @@ $neck-background-color:#fee0de;
 }
 
 .selected {
-  // NOTE: Filter animation shows the :before and :after elements but that's a minor visual that can be ignored.
   animation: red-selection 0.7s 1 linear;
 }
 
