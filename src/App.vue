@@ -30,6 +30,7 @@ body {
   border: 1px solid rgba(213, 217, 217, .5);
   box-shadow: 2px 2px 2px rgba(213, 217, 217, .5);
   align-items: center;
+  cursor: pointer;
   
   p {
     color: black;
